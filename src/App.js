@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import TopNav from './Components/TopNav';
+import TabNav from './Components/TabNav';
+import PrimaryData from './Components/PrimaryData';
+import DataTable from './Components/DataTable';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-green-50 min-h-screen">
+      <TopNav />
+      <TabNav />
+      <PrimaryData />
+      <DataTable />
     </div>
   );
 }
